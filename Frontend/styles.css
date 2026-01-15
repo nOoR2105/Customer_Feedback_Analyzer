@@ -1,0 +1,142 @@
+:root {
+  --soft-pink: #fdecef;
+  --accent-pink: #e73b7d;
+  --gold: #c9a24d;
+  --text-dark: #2b2b2b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: var(--text-dark);
+}
+
+/* navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.search {
+  width: 40%;
+  padding: 8px;
+  margin-left: 200px;
+}
+
+.nav-links span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* giva tagline */
+.hero {
+  background: var(--soft-pink);
+  padding: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+  
+}
+
+/* feedback card */
+.card {
+  max-width: 600px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+
+.card h2, .card h3 {
+  text-align: center;
+}
+
+
+.card input,
+.card select,
+.card textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.card textarea {
+  width: 575px;   
+  border-radius: 6px;
+  padding: 12px;
+  font-family: inherit;
+}
+
+.card button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--accent-pink);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.rating-label {
+  margin-top: 20px;
+  display: block;
+  font-weight: bold;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rating-btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px 0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  opacity: 0.6;
+}
+
+.rating-btn.active {
+  opacity: 1;
+  outline: 3px solid #333;
+}
+
+select:invalid {
+  color: #999;
+}
+
+.chart-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.insight-box {
+  background: #fdecef;
+  border-left: 4px solid #e73b7d;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.insight-box p {
+  margin: 8px 0;
+}
+

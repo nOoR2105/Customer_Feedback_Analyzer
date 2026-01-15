@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback Hub | GIVA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- navigation bar -->
+  <nav class="navbar">
+    <div class="logo">GIVA</div>
+    <input class="search" style="border-radius: 6px;" placeholder="Search Jewellery" />
+    <div class="nav-links">
+      <span>Stores</span>
+      <span>Account</span>
+      <span>Wishlist</span>
+      <span>Cart</span>
+    </div>
+  </nav>
+
+  <!-- giva tagline -->
+  <section class="hero">
+    <h1>Customer Feedback Hub</h1>
+    <p>What the Heart Wants</p>
+  </section>
+
+  <!-- feedback form -->
+  <section class="card">
+    <h2>Submit Feedback</h2>
+
+    <select id="product" style="border-radius: 6px;">
+      <option value="" disabled selected>Please select your product</option>
+      <option value="ring_1">Ring</option>
+      <option value="earring_1">Earring</option>
+      <option value="necklace_1">Necklace</option>
+      <option value="pendant_1">Pendant</option>
+      <option value="bracelet_1">Bracelet</option>
+    </select>
+
+    <label class="rating-label">How satisfied are you with our product?</label>
+
+    <div class="rating-group">
+      <button class="rating-btn r1" data-value="1">1</button>
+      <button class="rating-btn r2" data-value="2">2</button>
+      <button class="rating-btn r3" data-value="3">3</button>
+      <button class="rating-btn r4" data-value="4">4</button>
+      <button class="rating-btn r5" data-value="5">5</button>
+    </div>
+
+    <textarea id="review" placeholder="Write your experience..."></textarea>
+
+    <button id="submit">Submit</button>
+    <p id="status"></p>
+  </section>
+
+  <!-- Feedback insight display -->
+  <section class="card">
+    <h2>Feedback Insights</h2>
+
+    <h3 id="dashboardTitle" style="margin-bottom: 0px;">Insights for: Ring</h3>
+
+    <select id="dashboardProduct" style="margin-bottom: 11px; border-radius: 6px;">
+      <option value="ring_1">Ring</option>
+      <option value="earring_1">Earring</option>
+      <option value="necklace_1">Necklace</option>
+      <option value="pendant_1">Pendant</option>
+      <option value="bracelet_1">Bracelet</option>
+    </select>
+
+
+    <div class="chart-container">
+      <canvas id="sentimentChart"></canvas>
+    </div>
+
+
+    <div id="sentimentCounts" style="margin-top:11px;"></div>
+
+    <div id="themeSummary" style="margin-top:25px;"></div>
+
+    <button id="generateInsights" style="margin-top:20px;"> Generate Insights </button>
+
+    <div id="insightOutput" style="margin-top:15px;"></div>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
